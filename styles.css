@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: rgb(21, 108, 219);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 108, 219, 1) 0%,
+    rgba(47, 195, 174, 1) 50%,
+    rgba(209, 106, 237, 1) 100%
+  );
+}
+.container {
+  color: white;
+  background-color: #0e5d77;
+  width: 600px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formGroup {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 5px;
+}
+label {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 16px;
+  outline: 1px solid red;
+}
+
+.right {
+  outline: 2px solid green;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid red;
+  resize: none;
+}
+
+.register {
+  margin: 20px 0;
+  width: 50%;
+  padding: 16px;
+  border: none;
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.alertContainer {
+  margin: 15px;
+  padding: 5px;
+  font-size: 20px;
+  border: 1px solid #2fc3ae;
+  border-radius: 10px;
+}
+.register:hover {
+  background-color: rgb(1, 101, 1);
+}

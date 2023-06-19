@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1 class="registerTitle">Register Form</h1>
+        <div class="formGroup">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="lastname">Lastname</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Lastname"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="email">E-Mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="..@gmail.com"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="phonenumber">Phone Number</label>
+          <input
+            type="number"
+            name="phonenumber"
+            id="phonenumber"
+            min="0"
+            placeholder="1112223344"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Min 6, Max 14 character"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="passwordr">Repeat Password</label>
+          <input
+            type="password"
+            name="passwordr"
+            id="passwordr"
+            placeholder="Repeat Password"
+          />
+        </div>
+        <div class="formGroup">
+          <label for="adress">Adress</label>
+          <textarea
+            name="adress"
+            id="adress"
+            cols="30"
+            rows="6"
+            placeholder="Your Adress"
+          ></textarea>
+        </div>
+        <button id="register" class="register" name="register">Register</button>
+      </form>
+      <div class="alertContainer">
+        <p class="alertMessage">Please fill in all areas!</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
